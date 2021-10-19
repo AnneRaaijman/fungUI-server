@@ -8,16 +8,31 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      mushroom.belongsToMany(models.observation);
+      mushroom.hasMany(models.observation);
+      mushroom.belongsToMany(models.park, {
+        through: "parkmushrooms",
+        foreignKey: "mushroomId",
+      });
     }
   }
   mushroom.init(
     {
-      commonNameDutch: DataTypes.STRING,
-      commonNameEnglish: DataTypes.STRING,
+      commonNameDutch: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      commonNameEnglish: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
       scientificName: {
         type: DataTypes.STRING,
         unique: true,
+        allowNull: false,
+      },
+      image: {
+        type: DataTypes.STRING,
+        allowNull: false,
       },
       isPoisonous: {
         type: DataTypes.BOOLEAN,
@@ -31,7 +46,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.BOOLEAN,
         allowNull: false,
       },
-      capColor: DataTypes.SRING,
+      capColor: DataTypes.STRING,
     },
     {
       sequelize,

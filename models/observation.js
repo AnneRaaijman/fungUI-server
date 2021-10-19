@@ -9,7 +9,8 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      observation.belongsTo(models.user), observation.hasOne(models.mushroom);
+      observation.belongsTo(models.user),
+        observation.belongsTo(models.mushroom);
     }
   }
   observation.init(
@@ -26,8 +27,12 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
         allowNull: false,
       },
-      location: {
-        type: DataTypes.STRING,
+      latitude: {
+        type: DataTypes.FLOAT,
+        allowNull: false,
+      },
+      longitude: {
+        type: DataTypes.FLOAT,
         allowNull: false,
       },
     },

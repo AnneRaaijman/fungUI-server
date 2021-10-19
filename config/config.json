@@ -1,6 +1,6 @@
 {
   "development": {
-    "url": "postgres://hfcsotsq:sX2LW0jTCid_5Gi9H5xupeZUkU-1_F2h@hattie.db.elephantsql.com/hfcsotsq",
+    "url": "postgres://qyfdepmf:Vf4BKSP-Lqzj0rCmfQHt8tNSDTNnV6pM@hattie.db.elephantsql.com/qyfdepmf",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
