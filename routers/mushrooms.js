@@ -2,6 +2,7 @@ const { Router } = require("express");
 const authMiddleware = require("../auth/middleware");
 const Mushroom = require("../models").mushroom;
 const Observation = require("../models").observation;
+const Park = require("../models").park;
 // const Bid = require("../models").bid;
 
 const router = new Router();
@@ -67,6 +68,16 @@ router.post("/observations", async (req, res, next) => {
   } catch (e) {
     console.log(e.message);
     next(e);
+  }
+});
+
+router.get("/parks", async (req, res) => {
+  try {
+    const parks = await Park.findAll();
+    res.send(parks);
+    console.log("parks?", parks);
+  } catch (e) {
+    console.log(e.message);
   }
 });
 
