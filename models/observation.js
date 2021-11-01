@@ -10,15 +10,12 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       observation.belongsTo(models.user),
-        observation.belongsTo(models.mushroom);
+        observation.belongsTo(models.mushroom),
+        observation.belongsTo(models.park);
     }
   }
   observation.init(
     {
-      title: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
       observationTime: {
         type: DataTypes.DATE,
         allowNull: false,
