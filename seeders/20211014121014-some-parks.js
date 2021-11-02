@@ -14,6 +14,14 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
+          parkName: "Sportpark Spieringerhorn",
+          cityName: "Amsterdam",
+          latitude: 52.3857685,
+          longitude: 4.8248419,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
           parkName: "Sloterpark",
           cityName: "Amsterdam",
           latitude: 52.369002,

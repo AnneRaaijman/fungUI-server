@@ -30,7 +30,10 @@ router.get("/mushroom/:id", async (req, res) => {
 
 router.get("/observations", async (req, res) => {
   try {
-    const observations = await Observation.findAll({ include: [Mushroom] });
+    const observations = await Observation.findAll({
+      include: [Mushroom],
+      include: [Park],
+    });
     res.send(observations);
     console.log("observations?", observations);
   } catch (e) {
@@ -41,7 +44,7 @@ router.get("/observations", async (req, res) => {
 router.post("/observations", async (req, res, next) => {
   console.log("got to the body", req.body);
   const {
-    title,
+    parkId,
     observationTime,
     url,
     latitude,
@@ -56,7 +59,7 @@ router.post("/observations", async (req, res, next) => {
   }
   try {
     const newObservation = await Observation.create({
-      title,
+      parkId,
       observationTime,
       image: url,
       latitude,

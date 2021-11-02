@@ -1,5 +1,7 @@
 "use strict";
 
+const observation = require("../models/observation");
+
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.addColumn("observations", "userId", {
@@ -20,10 +22,20 @@ module.exports = {
       onUpdate: "CASCADE",
       onDelete: "SET NULL",
     });
+    await queryInterface.addColumn("observations", "parkId", {
+      type: Sequelize.INTEGER,
+      references: {
+        model: "parks",
+        key: "id",
+      },
+      onUpdate: "CASCADE",
+      onDelete: "SET NULL",
+    });
   },
 
   down: async (queryInterface, Sequelize) => {
     await queryInterface.removeColumn("observations", "userId");
     await queryInterface.removeColumn("observations", "mushroomId");
+    await queryInterface.removeColumn("observations", "parkId");
   },
 };
