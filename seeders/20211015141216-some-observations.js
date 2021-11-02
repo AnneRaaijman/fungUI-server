@@ -6,8 +6,7 @@ module.exports = {
       "observations",
       [
         {
-          title: "Lange Bretten",
-          observationTime: "2021-10-19 13:05:29.78+00",
+          observationTime: "2021-10-19 13:02:29.78+00",
           image:
             "http://res.cloudinary.com/fungui/image/upload/v1634290849/tiwo0pijptrj6f4ziz8z.jpg",
           latitude: 52.38471742765507,
@@ -16,9 +15,9 @@ module.exports = {
           updatedAt: "2021-10-19 13:05:29.78+00",
           userId: 1,
           mushroomId: 1,
+          parkId: 1,
         },
         {
-          title: "Lange Bretten",
           observationTime: "2021-10-19 13:05:29.78+00",
           image:
             "http://res.cloudinary.com/fungui/image/upload/v1634290960/zmgv9wrwhgq9rkh4y2qk.jpg3",
@@ -28,9 +27,9 @@ module.exports = {
           updatedAt: "2021-10-19 13:05:29.78+00",
           userId: 1,
           mushroomId: 6,
+          parkId: 1,
         },
         {
-          title: "Lange Bretten",
           observationTime: "2021-10-19 13:05:29.78+00",
           image:
             "http://res.cloudinary.com/fungui/image/upload/v1634302750/gzaajkfvfaeibd3geyxk.jpg",
@@ -40,9 +39,9 @@ module.exports = {
           updatedAt: "2021-10-19 13:05:29.78+00",
           userId: 1,
           mushroomId: 2,
+          parkId: 1,
         },
         {
-          title: "Lange Bretten",
           observationTime: "2021-10-19 13:05:29.78+00",
           image:
             "http://res.cloudinary.com/fungui/image/upload/v1634302872/mszux49vf2ranc999ujs.jpg",
@@ -52,9 +51,10 @@ module.exports = {
           updatedAt: "2021-10-19 13:05:29.78+00",
           userId: 1,
           mushroomId: 5,
+          parkId: 1,
         },
         {
-          title: "Sportpark Spieringhorn",
+          parkId: 2,
           observationTime: "2021-10-19 13:05:29.78+00",
           image:
             "http://res.cloudinary.com/fungui/image/upload/v1634291041/zinyqjgm7qc1uyzkpjdc.jpg",
@@ -66,7 +66,7 @@ module.exports = {
           mushroomId: 3,
         },
         {
-          title: "Sportpark Spieringhorn",
+          parkId: 2,
           observationTime: "2021-10-19 13:05:29.78+00",
           image:
             "http://res.cloudinary.com/fungui/image/upload/v1634563444/iwylhe4orhtdhih4njws.jpg",
@@ -78,7 +78,7 @@ module.exports = {
           mushroomId: 8,
         },
         {
-          title: "Codaisseur",
+          parkId: 2,
           observationTime: "2021-10-19 13:05:29.78+00",
           image:
             "http://res.cloudinary.com/fungui/image/upload/v1634561830/ztxcd4jvdvleylaa0w8d.jpg",
@@ -90,7 +90,7 @@ module.exports = {
           mushroomId: 1,
         },
         {
-          title: "Sloterpark",
+          parkId: 3,
           observationTime: "2021-10-24 10:18:56+00",
           image:
             "http://res.cloudinary.com/fungui/image/upload/v1635157216/zzym5bkacycvscpwrnu8.jpg",
@@ -102,7 +102,7 @@ module.exports = {
           mushroomId: 10,
         },
         {
-          title: "Sloterpark",
+          parkId: 3,
           observationTime: "2021-10-24 10:22:40+00",
           image:
             "http://res.cloudinary.com/fungui/image/upload/v1635157387/rrrlcphu6v0bivrxquae.jpg",
@@ -114,7 +114,7 @@ module.exports = {
           mushroomId: 9,
         },
         {
-          title: "Sportpark Spieringhorn",
+          parkId: 2,
           observationTime: "2021-10-29 10:32:30+00",
           image:
             "http://res.cloudinary.com/fungui/image/upload/v1635503622/x9sjbcmm7hstmtolxpcr.jpg",
@@ -126,7 +126,7 @@ module.exports = {
           mushroomId: 9,
         },
         {
-          title: "Sportpark Spieringhorn",
+          parkId: 2,
           observationTime: "2021-10-29 15:38:01+00",
           image:
             "http://res.cloudinary.com/fungui/image/upload/v1635522342/z8wvma2zwz5mz94tfpvb.jpg",

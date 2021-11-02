@@ -28,11 +28,14 @@ module.exports = {
         model: "parks",
         key: "id",
       },
+      onUpdate: "CASCADE",
+      onDelete: "SET NULL",
     });
   },
 
   down: async (queryInterface, Sequelize) => {
     await queryInterface.removeColumn("observations", "userId");
     await queryInterface.removeColumn("observations", "mushroomId");
+    await queryInterface.removeColumn("observations", "parkId");
   },
 };
